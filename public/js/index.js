@@ -4,7 +4,7 @@ const palavras = frase.trim().split(" ")
 const qtdPalavras = palavras.length
 
 const tamanhoFrase = $("#tamanho-frase")
-
+tamanhoFrase.text(qtdPalavras)
 
 console.log(qtdPalavras)
 
