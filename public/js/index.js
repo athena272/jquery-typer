@@ -1,5 +1,10 @@
+
 const frase = $(".frase").text() 
-const qtdPalavras = frase.trim().split(" ")
+const palavras = frase.trim().split(" ")
+const qtdPalavras = palavras.length
+
+const tamanhoFrase = $("#tamanho-frase")
+
 
 console.log(qtdPalavras)
 
