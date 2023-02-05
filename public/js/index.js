@@ -8,7 +8,17 @@ const qtdPalavras = palavras.length
 const tamanhoFrase = $("#tamanho-frase")
 tamanhoFrase.text(qtdPalavras)
 
-console.log(qtdPalavras)
+
+const campoDigitacao = $(".campo-digitacao")
+campoDigitacao.on("input", function() {
+    const content = campoDigitacao.val()
+    
+    const qtdPalavrasCampo = content.split(/\S+/).length - 1
+    $('#contador-palavras').text(qtdPalavrasCampo)
+
+    const qtdCaracteresCampo = content.length
+    $('#contador-caracteres').text(qtdCaracteresCampo)
+})
 
 // let str = "   Hello, World!   ";
 // str = str.trim();
