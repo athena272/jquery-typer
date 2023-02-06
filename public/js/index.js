@@ -21,7 +21,17 @@ campoDigitacao.on("input", function () {
     $('#contador-caracteres').text(qtdCaracteresCampo)
 })
 
-// Sabe se o usuario entrou no campo
-campoDigitacao.on("focus", function () {
+// Sabe se o usuario entrou no campo e definir o tempo de digitacao
+let tempoRestante = $("#tempo-digitacao").text()
+campoDigitacao.one("focus", function () {
+    // A funcao setInverval sempre retorna o proprio ID
+    const cronometroID = setInterval(function () {
+        tempoRestante--
+        $("#tempo-digitacao").text(tempoRestante)
 
-})
+        if (tempoRestante < 1) {
+            campoDigitacao.attr("disabled", true)
+            clearInterval(cronometroID)
+        }
+    }, 1000)
+}) 
