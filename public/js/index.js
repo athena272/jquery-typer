@@ -8,9 +8,9 @@ const qtdPalavras = palavras.length
 const tamanhoFrase = $("#tamanho-frase")
 tamanhoFrase.text(qtdPalavras)
 
-
+// Capturar tamanho da palavra e caracteres do campo de digitacao
 const campoDigitacao = $(".campo-digitacao")
-campoDigitacao.on("input", function() {
+campoDigitacao.on("input", function () {
     const content = campoDigitacao.val()
 
     // Regular expression to remove backspace
@@ -21,7 +21,7 @@ campoDigitacao.on("input", function() {
     $('#contador-caracteres').text(qtdCaracteresCampo)
 })
 
-// let str = "   Hello, World!   ";
-// str = str.trim();
-// console.log(str);  // Output: "Hello, World!"
+// Sabe se o usuario entrou no campo
+campoDigitacao.on("focus", function () {
 
+})
