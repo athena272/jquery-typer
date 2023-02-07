@@ -1,6 +1,7 @@
 // .text() sem parametro retorna o valor textual do elemento
 // .text(param) com parametro seta o valor textual no elemento
 
+const tempoInicial = $("#tempo-digitacao").text()
 const frase = $(".frase").text()
 const palavras = frase.trim().split(" ")
 const qtdPalavras = palavras.length
@@ -34,4 +35,20 @@ campoDigitacao.one("focus", function () {
             clearInterval(cronometroID)
         }
     }, 1000)
-}) 
+})
+
+// $("#reiniciar-game").on("click", function () {
+//     console.log("Botao clicado")
+// })
+$("#reiniciar-game").click(function () {
+    // Reiniciar campo
+    campoDigitacao.attr("disabled", false)
+    campoDigitacao.val("")
+
+    // Reiniciar palavras e caracteres
+    $('#contador-palavras').text("0")
+    $('#contador-caracteres').text("0")
+
+    // Reinicar tempo
+    $("#tempo-digitacao").text(tempoInicial)
+})
