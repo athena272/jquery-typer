@@ -4,27 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>JQuery Typer</title>
+    <link rel="stylesheet" href="public/css/libs/materialize.min.css">
+    <link rel="stylesheet" href="public/css/libs/google-fonts.css">
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body>
-    <h1>JQuery Typer</h1>
-    <p class="texto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem soluta quisquam commodi perferendis vel.
-    </p>
+    <div class="container">
+        <h1>JQuery Typer</h1>
+        <p class="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem soluta quisquam commodi perferendis vel.
+        </p>
+        <ul class="informacoes">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-texto">0</span> palavra(s)
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="tempo-digitacao">10</span> segundo(s)
+            </li>
+        </ul>
+        <textarea class="campo-digitacao" name="campo-digitacao" id="" cols="40" rows="10"></textarea>
 
-    <ul class="informacoes">
-        <li><span id="tamanho-texto">0</span> palavra(s)</li>
-        <li><span id="tempo-digitacao">10</span> segundo(s)</li>
-    </ul>
+        <div class="botoes">
+            <a id="reiniciar-game" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">restore</i>
+            </a>
+        </div>
 
-    <textarea class="campo-digitacao" name="campo-digitacao" id="" cols="40" rows="10"></textarea>
-    <button id="reiniciar-game">Reiniciar</button>
-
-
-    <ul>
-        <li><span id="contador-caracteres">0</span> caracter(es)</li>
-        <li><span id="contador-palavras">0</span> palavra(s)</li>
-    </ul>
+        <ul class="palavras">
+            <li><span id="contador-caracteres">0</span> caracter(es)</li>
+            <li><span id="contador-palavras">0</span> palavra(s)</li>
+        </ul>
+    </div>
 
     <!-- Javascript -->
     <script src="public/js/jquery.js"></script>
