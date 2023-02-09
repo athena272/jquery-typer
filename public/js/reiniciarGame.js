@@ -15,8 +15,8 @@ export function reiniciarGame() {
     $('#contador-palavras').text("0")
     $('#contador-caracteres').text("0")
     campoDigitacao.removeClass("campo-desabilitado")
-    campoDigitacao.removeClass(".borda-vermelha")
-    campoDigitacao.removeClass(".borda-verde")
+    campoDigitacao.removeClass("borda-vermelha")
+    campoDigitacao.removeClass("borda-verde")
     // campoDigitacao.toggleClass("campo-desabilitado")
 
 
