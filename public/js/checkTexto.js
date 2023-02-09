@@ -5,14 +5,17 @@ export function checkTexto() {
     campoDigitacao.on("input", function () {
         const digitado = campoDigitacao.val()
         const pedacoComparavel = texto.substr(0, digitado.length)
-
-        if (digitado === pedacoComparavel) {
-            campoDigitacao.addClass(".borda-verde")
-            campoDigitacao.removeClass(".borda-vermelha")
+      
+        if (digitado == pedacoComparavel) {
+            console.log("VERDE")
+            campoDigitacao.addClass("borda-verde")
+            campoDigitacao.removeClass("borda-vermelha")
 
         } else {
-            campoDigitacao.addClass(".borda-vermelha")
-            campoDigitacao.removeClass(".borda-verde")
+            console.log("Vermelho")
+
+            campoDigitacao.addClass("borda-vermelha")
+            campoDigitacao.removeClass("borda-verde")
 
         }
         // ANOTHER WAY
