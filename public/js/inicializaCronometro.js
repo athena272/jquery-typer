@@ -16,6 +16,8 @@ export function inicializaCronometro() {
                 campoDigitacao.attr("disabled", true)
                 clearInterval(cronometroID)
                 $("#reiniciar-game").attr("disabled", false)
+                campoDigitacao.addClass("campo-desabilitado")
+                // campoDigitacao.toggleClass("campo-desabilitado")
             }
         }, 1000)
     })
