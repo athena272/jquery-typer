@@ -15,6 +15,11 @@ export function checkTexto() {
             campoDigitacao.removeClass(".borda-verde")
 
         }
+        // ANOTHER WAY
+        // var ehCorreto = (digitado === pedacoComparavel);
+
+        // campo.toggleClass("borda-verde", ehCorreto);
+        // campo.toggleClass("borda-vermelha", !ehCorreto);
 
     })
 }
