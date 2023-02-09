@@ -4,9 +4,11 @@ const campoDigitacao = $(".campo-digitacao")
 export function checkTexto() {
     campoDigitacao.on("input", function () {
         const digitado = campoDigitacao.val()
-        const pedacoComparavel = texto.substr(0, digitado.length)
+        // const pedacoComparavel = texto.substr(0, digitado.length)
+        // MODERN WAY
+        const digitadoCorretamente = texto.startsWith(digitado)
       
-        if (digitado == pedacoComparavel) {
+        if (digitadoCorretamente) {
             console.log("VERDE")
             campoDigitacao.addClass("borda-verde")
             campoDigitacao.removeClass("borda-vermelha")
