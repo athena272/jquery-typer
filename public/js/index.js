@@ -1,7 +1,7 @@
-import { tamanhoTexto } from "./tamanhoTexto.js"
-import { inicializaContadores } from "./startStopwatch.js"
-import { inicializaCronometro } from "./inicializaCronometro.js"
-import { reiniciarGame } from "./reiniciarGame.js"
+import { getSizeText } from "./getSizeText.js"
+import { startCounters } from "./startCounters.js"
+import { startStopwatch } from "./startStopwatch.js"
+import { restartGame } from "./restartGame.js"
 
 import { checkText } from "./checkText.js"
 
@@ -9,10 +9,10 @@ import { checkText } from "./checkText.js"
 // $(document).ready 
 $(
     function () {
-        tamanhoTexto()
-        inicializaContadores()
-        inicializaCronometro()
+        getSizeText()
+        startCounters()
+        startStopwatch()
         checkText()
-        $("#reiniciar-game").click(reiniciarGame)
+        $("#reiniciar-game").click(restartGame)
     }
 )
