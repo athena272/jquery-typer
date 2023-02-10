@@ -9,13 +9,10 @@ export function checkText() {
         const digitadoCorretamente = texto.startsWith(digitado)
       
         if (digitadoCorretamente) {
-            console.log("VERDE")
             campoDigitacao.addClass("borda-verde")
             campoDigitacao.removeClass("borda-vermelha")
 
         } else {
-            console.log("Vermelho")
-
             campoDigitacao.addClass("borda-vermelha")
             campoDigitacao.removeClass("borda-verde")
 
