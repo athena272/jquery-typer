@@ -1,9 +1,9 @@
 import { tamanhoTexto } from "./tamanhoTexto.js"
-import { inicializaContadores } from "./inicializaContadores.js"
+import { inicializaContadores } from "./startStopwatch.js"
 import { inicializaCronometro } from "./inicializaCronometro.js"
 import { reiniciarGame } from "./reiniciarGame.js"
 
-import { checkTexto } from "./checkTexto.js"
+import { checkText } from "./checkText.js"
 
 // Quando a página carregar
 // $(document).ready 
@@ -12,7 +12,7 @@ $(
         tamanhoTexto()
         inicializaContadores()
         inicializaCronometro()
-        checkTexto()
+        checkText()
         $("#reiniciar-game").click(reiniciarGame)
     }
 )
