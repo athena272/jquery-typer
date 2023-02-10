@@ -9,4 +9,6 @@ export function endGame() {
     campoDigitacao.addClass("campo-desabilitado")
     // campoDigitacao.toggleClass("campo-desabilitado")
 
+    insertScore()
+
 }
