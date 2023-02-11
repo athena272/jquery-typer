@@ -2,7 +2,7 @@ import { getSizeText } from "./getSizeText.js"
 import { startCounters } from "./startCounters.js"
 import { startStopwatch } from "./startStopwatch.js"
 import { restartGame } from "./restartGame.js"
-import { showScore } from "./insertScore.js"
+import { showScore } from "./scoreControl.js"
 
 import { checkText } from "./checkText.js"
 
