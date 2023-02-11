@@ -1,3 +1,8 @@
+export function showScore() {
+    $(".placar").slideToggle(750)
+    // $(".placar").toggle(1500)
+}
+
 export function insertScore() {
     const corpoTabela = $(".placar").find("tbody")
     const userName = "userName"
