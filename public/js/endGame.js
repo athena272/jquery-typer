@@ -1,4 +1,4 @@
-import { insertScore } from "./insertScore.js"
+import { insertScore } from "./scoreControl.js"
 
 const campoDigitacao = $(".campo-digitacao")
 
@@ -10,5 +10,4 @@ export function endGame() {
     // campoDigitacao.toggleClass("campo-desabilitado")
 
     insertScore()
-
 }
