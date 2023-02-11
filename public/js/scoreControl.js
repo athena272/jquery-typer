@@ -7,7 +7,7 @@ export function showScore() {
 function scrollToScore() {
     const positionScore = $(".placar").offset().top
     $("html, body").animate({
-        scrollTop: positionScore,
+        scrollTop: `${positionScore}px`,
     }, 1000)
 
 }
@@ -59,9 +59,12 @@ function removeLine(ev) {
     ev.preventDefault()
     const line = $(this).parent().parent()
 
-    line.fadeOut(1000)
-    setTimeout(() => {
+    line.fadeOut(1000, function () {
         line.remove()
-    }, 1000);
+    })
+    // line.fadeOut(1000)
+    // setTimeout(() => {
+    //     line.remove()
+    // }, 1000);
 }
 
