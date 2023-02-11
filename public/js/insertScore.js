@@ -44,6 +44,11 @@ function newLine(userName, qtdPalavras) {
 
 function removeLine(ev) {
     ev.preventDefault()
-    $(this).parent().parent().remove()
+    const line = $(this).parent().parent()
+    
+    line.fadeOut()
+    setTimeout(() => {
+        line.remove()
+    }, 1000);
 }
 
