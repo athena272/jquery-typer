@@ -1,0 +1,2 @@
+$("#get-palavra").click(randomText)
+
