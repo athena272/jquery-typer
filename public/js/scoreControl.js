@@ -14,7 +14,7 @@ function scrollToScore() {
 
 export function insertScore() {
     const corpoTabela = $(".placar").find("tbody")
-    const userName = "userName"
+    const userName = "Usuário Padrão"
     const qtdPalavras = $('#contador-palavras').text()
     // const removeBtn = `<a href="#"><i class="small material-icons">delete</i></a>`
     // <tr>` +
